@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Input forms</title>
+</head>
+<header class="header">
+  <h1>Intake Main Flow</h1>
+  <h2>Information</h2>
+</header>
+
+<body>
+  <form>
+    <!-- ---------------DROPDOWN------------ -->
+    <div class="dropdown">
+      <label for="dropdown">Intake Type <span> * (select)</span></label><br>
+      <select id="dropdown" name="type" required>
+        <option disabled selected value>Refferal</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <!-- -------------------DATE----------------- -->
+    <div class="date">
+      <label for="date">Enrollment Initiation Date jquery</label><br>
+      <input type="date" id="date" value="2021-11-05" readonly>
+    </div>
+
+    <!-- ------------------------PHONE------------------- -->
+    <div class="phone">
+      <label for="tel">phone</label><br>
+      <input type="tel" id="tel" required placeholder="+380">
+    </div>
+
+    <!-- ---------------DROPDOWN------------ -->
+    <div class="dropdown">
+      <label for="drop">Application Category<span> *</span></label><br>
+      <select id="drop" name="type" required>
+        <option disabled selected value>Child Support</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <!-- ------------------------EMAIL---------------------- -->
+    <div class="email">
+      <label for="mail">email</label><br>
+      <input type="email" id="mail" placeholder="user@gmail.com">
+    </div>
+
+    <!-- -------------------DATE----------------- -->
+    <div class="date">
+      <label for="date">Enrollment Submission Date (Optional)</label><br>
+      <input type="date" id="date" value="2021-11-05" readonly>
+    </div>
+
+    <!-- ---------------DROPDOWN------------ -->
+    <div class="dropdown left">
+      <label for="dropdown">Application Registration (Optional)</label><br>
+      <select id="dropdown" name="type" required>
+        <option disabled selected value">APP0000116</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="wrapper">
+
+      <!-- -------------------DATE----------------- -->
+      <div class="date left1">
+        <label for="date">Additional Information Requested Date (Optional)</label><br>
+        <input type="date" id="date" value="2021-05-13">
+      </div>
+
+      <!-- --------------------CHECKBOX---------------- -->
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Purged</label>
+      </div>
+    </div>
+
+    <!-- ---------------TEXT------------ -->
+    <div class="text">
+      <label for="text">Remaining Days Before Referral is Purged (Optional)</label><br>
+      <input type="text" id="text" required minlength="2" maxlength="13" size="16" value="13">
+    </div>
+
+    <!-- ---------------DROPDOWN------------ -->
+    <div class="dropdown">
+      <label for="drop">Exempt from Paternity (Optional) (select)</label><br>
+      <select id="drop" name="type" required>
+        <option disabled selected value>No</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <!-- -------------------DATE----------------- -->
+    <div class="date">
+      <label for="date">Fee Payment Date (Optional)</label><br>
+      <input type="date" id="date" value="2021-05-13">
+    </div>
+
+    <!-- ---------------DROPDOWN------------ -->
+    <div class="dropdown">
+      <label for="drop">Enrollment Status (Optional)</label><br>
+      <select id="drop" name="type" required>
+        <option disabled selected value>Worklisted</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <!-- --------------------CHECKBOX---------------- -->
+    <div class="wrapper">
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox" checked class="checkbox">
+        <label for="checkbox">Application Fee Processed</label>
+        <span class="checkmark"></span>
+      </div>
+    </div>
+  </form>
+
+  <div class="line"></div>
+
+  <div class="header-second header">
+    <h2 class="second-header">Maternity Information</h2>
+  </div>
+
+  <form>
+    <div class="maternity">
+      <!-- --------------------CHECKBOX---------------- -->
+      <div class="meternity-checkbox">
+        <input type="checkbox" id="mcheckbox" class="maternity__input">
+        <label for="mcheckbox">Are you requesting child support services for an
+          unborn child?</label>
+      </div>
+
+      <!-- ---------------DROPDOWN------------ -->
+      <div class="meternity-dropdown">
+        <label for="drop">Other known biological parent? (Optional)</label><br>
+        <select id="drop" name="type" required>
+          <option disabled selected value>None</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="header-second header">
+      <h2 class="second-header">Official Use</h2>
+    </div>
+
+    <div class="area maternity">
+      <div class="dropdown">
+        <label for="drop">Case Category (select)</label><br>
+        <select id="drop" name="type">
+          <option disabled selected value>Active IV-A</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="dropdown">
+        <label for="drop">IV-D Indicator <span> *</span></label><br>
+        <select id="drop" name="type" required>
+          <option disabled selected value>Non-IV-D</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="arrears maternity">
+
+      <div class="dropdown">
+        <label for="drop">Arrears Only Indicator (Optional)</label><br>
+        <select id="drop" name="type">
+          <option value="None">None</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="dropdown">
+        <label for="drop">Intergovernmental Case Category (Optional)</label><br>
+        <select id="drop" name="type" required>
+          <option value="None">None</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="assigned maternity">
+
+      <div class="dropdown">
+        <label for="drop">Assigned County of Ownership (Optional)</label><br>
+        <select id="drop" name="type">
+          <option value="None">None</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="dropdown">
+        <label for="drop">Intergovernmental Case Type (Optional)</label><br>
+        <select id="drop" name="type" required>
+          <option value="None">None</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="intergovernmental maternity">
+
+      <div class="dropdown">
+        <label for="drop">Intergovermental Case Status (details)</label><br>
+        <select id="drop" name="type">
+          <option value="None">None</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="dropdown">
+        <label for="search">Case Number</label><br>
+        <input class="search" type="search" id="search" placeholder="Search Case Number">
+      </div>
+    </div>
+
+    <div class="maternity">
+
+      <div class="dropdown">
+        <label for="drop">Special Handling Indicator for Applicant (Optional)</label><br>
+        <select id="drop" name="type">
+          <option value="None">None</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="dropdown">
+        <label for="search">Referral Number</label><br>
+        <input class="search" type="search" id="search" placeholder="Search Case Number">
+      </div>
+    </div>
+
+    <div class="maternity">
+
+      <div class="dropdown">
+        <label for="drop">Special Handling Indicator for Other Parent
+          (Optional)</label><br>
+        <select id="drop" name="type">
+          <option value="None">None</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+  </form>
+
+  <div class="line"></div>
+  <div class="header-second header">
+    <h2 class="second-header">System Information</h2>
+  </div>
+
+  <form>
+    <div class="maternity">
+
+      <div class="dropdown">
+        <label for="search">Enrollment Taken by User </label><br>
+        <input class="search" type="search" id="search" placeholder="Search Input">
+      </div>
+
+      <div class="dropdown">
+        <label for="search">Intake Supervisor (Optional)</label><br>
+        <input class="search" type="search" id="search" placeholder="Search Input">
+      </div>
+
+    </div>
+
+    <div class="maternity">
+
+      <div class="dropdown">
+        <label for="search">Worker (Optional)</label><br>
+        <input class="search" type="search" id="search" placeholder="Search Input">
+      </div>
+
+      <div class="dropdown">
+        <label for="search">Owner (Optional)</label><br>
+        <input class="search blue" type="search" id="search" placeholder="Search Input">
+      </div>
+
+    </div>
+  </form>
+
+  <div class="line"></div>
+  <input class="btn" type="button" value="Next">
+</body>
+
+</html>
